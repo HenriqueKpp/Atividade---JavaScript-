@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="vetor.css"> 
+   <script src="vetor.js"></script>
+    <title>Vetores em JavaScript - Lista de Números</title>
+    
+</head>
+<body>
+    <div class="container">
+        <h1>📚 Cadastro de vendas</h1>
+        
+        <!-- Formulário -->
+        <div class="form-group">
+            <input type="text" id="valor" placeholder="Nome do vendedor" step="any">
+            <input type="number" id="valor2" placeholder="Valor da venda" step="any">
+            <button class="btn-adicionar" onclick="adicionarVenda()">➕ Cadastrar</button>
+
+        </div>
+
+        <h1>Lista de vendas</h1>
+
+        <table  style="width: 100%; border-collapse: collapse;">
+            <tr>
+                <th>ID</th>
+                <th>Vendedor</th>
+                <th>Valor</th>
+                <th>Desconto</th>
+                <th>Valor Final</th>
+                <th>Data</th>
+                <th>Ações</th>
+            </tr>
+        </table>
+
+        <div class="lista-container">
+
+            <div id="listaValores">
+                <div class="vazio">Nenhum valor cadastrado</div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
